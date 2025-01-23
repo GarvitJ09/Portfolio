@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const themeToggle = document.querySelector('.theme-toggle');
+  const themeSwitch = document.getElementById('theme-switch');
   const menuToggle = document.querySelector('.menu-toggle');
   const menuPanel = document.querySelector('.menu-panel');
   const body = document.body;
@@ -8,8 +8,13 @@ document.addEventListener('DOMContentLoaded', () => {
   const savedTheme = localStorage.getItem('theme') || 'light-theme';
   body.classList.add(savedTheme);
 
+  // Set the initial state of the theme switch
+  if (savedTheme === 'dark-theme') {
+    themeSwitch.checked = true;
+  }
+
   // Toggle theme
-  themeToggle.addEventListener('click', () => {
+  themeSwitch.addEventListener('change', () => {
     body.classList.toggle('light-theme');
     body.classList.toggle('dark-theme');
 
