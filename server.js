@@ -3,6 +3,7 @@ const nodemailer = require('nodemailer');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const dotenv = require('dotenv');
+const path = require('path');
 
 // dot env config
 dotenv.config();
@@ -12,6 +13,8 @@ const app = express();
 // Middleware
 app.use(cors());
 app.use(bodyParser.json());
+// Serve static files from the "public" directory
+app.use(express.static(path.join(__dirname, 'public')));
 
 // Configure Nodemailer
 const transporter = nodemailer.createTransport({
