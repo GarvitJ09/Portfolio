@@ -171,8 +171,8 @@ body.dark-theme .btn:hover {
 }
 
 /* About Section */
-.about, .skills, .projects, .contact { 
-  height: 100vh;
+.about, .skills, .projects, .education, .contact { 
+  /* height: 100vh; */
   padding: 4rem 1rem;
   text-align: center;
   animation: fadeInUp 1s ease-in-out;
@@ -207,9 +207,7 @@ body.dark-theme .btn:hover {
   margin: 0 auto;
 }
 
-/* Skills Section */
-/* Skills Section */
-/* Skills Section */
+/* Skills Section */ 
 .skills {
   padding: 4rem 1rem;
   text-align: center;
@@ -224,20 +222,21 @@ body.dark-theme .btn:hover {
 } 
 
 .skills-category {
-  min-width: 250px;
-  margin: 0 1rem;
+  min-width: 250px; 
+  margin: 1rem;
   background: var(--background-light);
   color: var(--text-light);
   padding: 1rem;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px var(--background-dark);
   transition: background-color 0.3s, color 0.3s;
 }
 
 body.dark-theme .skills-category {
   background: var(--background-dark);
   color: var(--text-dark);
-}
+  box-shadow: 0 4px 8px var(--background-light);
+} 
 
 .skills-category h3 {
   margin-top: 0;
