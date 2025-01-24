@@ -10,7 +10,11 @@ dotenv.config();
 
 const app = express();
 
-app.use(cors());
+app.use(
+  cors({
+    origin: '*', // Allow all origins (use specific origins for better security in production)
+  })
+);
 app.use(bodyParser.json());
 
 // Serve static files from the "public" directory

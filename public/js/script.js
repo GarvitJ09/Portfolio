@@ -67,25 +67,30 @@ document
       message: document.querySelector('.contact-form textarea').value,
     };
 
-    try {
-      const response = await fetch('/api/send-email', {
+    new Promise((resolve, reject) => {
+      fetch('/api/send-email', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify(formData),
-      });
-
-      if (response.ok) {
-        alert('Your message has been sent successfully!');
-        document.querySelector('.contact-form').reset();
-      } else {
-        alert('Failed to send your message. Please try again later.');
-      }
-    } catch (error) {
-      console.error('Error:', error);
-      alert('An error occurred. Please try again later.');
-    }
+      })
+        .then((response) => {
+          if (response.ok) {
+            alert('Your message has been sent successfully!');
+            document.querySelector('.contact-form').reset();
+            resolve(); // Resolving promise if the email is sent successfully
+          } else {
+            alert('Failed to send your message. Please try again later.');
+            reject(new Error('Failed to send email')); // Rejecting promise if sending fails
+          }
+        })
+        .catch((error) => {
+          console.error('Error:', error);
+          alert('An error occurred. Please try again later.');
+          reject(error); // Rejecting promise if there's an error in the fetch process
+        });
+    });
   });
 
 function slideLeft() {
