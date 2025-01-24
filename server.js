@@ -10,7 +10,6 @@ dotenv.config();
 
 const app = express();
 
-// Middleware
 app.use(cors());
 app.use(bodyParser.json());
 
@@ -18,11 +17,14 @@ app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Define API routes
-app.post('/send-email', sendMail);
+app.post('/api/send-email', sendMail);
+
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'index.html'));
+});
 
 // Start the server
-app.listen(process.env.PORT || 3000, () => {
-  console.log(
-    `Server is running on http://localhost:${process.env.PORT || 3000}`
-  );
+const port = process.env.PORT || 3000;
+app.listen(port, () => {
+  console.log(`Server running at http://localhost:${port}`);
 });
