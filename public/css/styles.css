@@ -3,8 +3,9 @@ body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
   line-height: 1.6;
-  transition: background-color 0.3s, color 0.3s;
-}
+  transition: background-color 0.3s, color 0.3s; 
+} 
+
 
 :root {
   --background-light: #ffffff;
@@ -44,9 +45,59 @@ a {
   z-index: 1000;
 }
 
-.menu-toggle {
-  right: 70px;
+ 
+.menu-toggle {  
+  transition: transform 0.3s ease;
+  z-index: 1001; /* Higher than other elements */  
+  left: 20px;
 }
+
+.menu-toggle i {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.menu-toggle.open i.fa-bars {
+  opacity: 0;
+  transform: rotate(180deg);
+}
+
+.menu-toggle.open i.fa-times {
+  opacity: 1;
+  transform: rotate(0);
+}
+
+.menu-panel {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 250px;
+  height: 100%;
+  background-color: #333;
+  color: white;
+  transition: left 0.3s ease;
+  z-index: 1000;
+}
+
+.menu-panel.open {
+  left: 0;
+}
+
+.menu-panel ul {
+  list-style: none;
+  padding: 20px;
+  margin: 0;
+}
+
+.menu-panel li {
+  margin: 20px 0;
+}
+
+.menu-panel a {
+  color: white;
+  text-decoration: none;
+}
+
+
 
 .theme-toggle {
   right: 20px;
@@ -93,6 +144,7 @@ body.dark-theme .theme-toggle .slider::before {
 .social-panel a svg.social-icon {
   width: 1.5rem;
   height: 1.5rem;
+  margin-left: auto;
   vertical-align: middle;
   fill: currentColor;
   stroke: currentColor;
@@ -103,11 +155,10 @@ body.dark-theme .theme-toggle .slider::before {
 .social-panel {
   position: fixed;
   top: 50%;
-  right: 20px;
+  right: 10px;
   transform: translateY(-50%);
-  padding: 1rem;
-  border-radius: 8px 0 0 8px;
-  z-index: 1000;
+  padding: 1rem; 
+  z-index: 1000; 
 }
 
 .social-panel ul {
@@ -347,16 +398,7 @@ h2 {
   padding-left: 2.5rem;
   text-align: left;
 }
-
-.timeline-marker {
-  position: absolute;
-  left: 0;
-  top: 0.5rem;
-  width: 1rem;
-  height: 1rem; 
-  border-radius: 50%;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-}
+ 
 
 .timeline-content { 
   border-radius: 8px;
@@ -475,7 +517,7 @@ body.dark-theme .timeline::before {
 
 .timeline-marker {
   position: absolute;
-  left: -2.35rem;
+  left: -2.7rem;
   top: 0;
   width: 1.2rem;
   height: 1.2rem;
@@ -483,7 +525,7 @@ body.dark-theme .timeline::before {
   border-radius: 50%;
   border: 4px solid var(--background-light);
   box-shadow: 0 0 0 3px var(--text-light);
-  transition: all 0.3s ease;
+  transition: all 0.3s ease;   
 }
 
 body.dark-theme .timeline-marker {
@@ -578,6 +620,89 @@ body.dark-theme .project-image img {
 
 .project-content p {
   margin-top: 0.5rem;
+}
+
+/* Achievements Section */ 
+.achievements {  
+  text-align: center;
+  animation: fadeInUp 1s ease-in-out;
+  position: relative;
+  padding: 4rem 2rem; 
+  overflow: hidden;
+} 
+
+.achievements-item {
+  position: relative; 
+  padding: 2rem;
+  max-width: 700px;
+  width: 100%;
+  border-radius: 12px; 
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: left;
+  overflow: hidden; 
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); 
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 0.6s ease-in-out forwards;
+}
+
+.achievements-item:hover {
+  transform: translateY(-5px);
+  box-shadow: -5px 5px 10px black;  
+}
+
+body.dark-theme .achievements-item:hover {
+  transform: translateY(-5px);
+  box-shadow: -5px 5px 10px  whitesmoke;
+}
+
+.achievements-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.1);
+  transition: width 0.4s ease-in-out;
+}
+
+.achievements-item:hover::before {
+  width: 100%;
+} 
+
+.achievements-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center; /* Center-align content */
+} 
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+} 
+@media (max-width: 768px) {
+  .achievements {
+    padding: 3rem 1rem;
+  }
+
+  .achievements-item {
+    padding: 1.5rem;
+  }
+ 
+} 
+  
+
+/* Responsive Design */
+@media (max-width: 768px) {
+   
+
+  .achievements-item {
+    padding: 1rem;
+  }
 }
 
 /* Contact Form */
