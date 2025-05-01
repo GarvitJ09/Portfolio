@@ -80,44 +80,53 @@
   <section id="skills" class="skills">
     <div class="container">
       <h2>Skills</h2>
-      <div class="skills-slider">
-        <button class="arrow left-arrow" onclick="slideLeft()">&#10094;</button>
-        <div class="skills-wrapper">
-          <div class="skills-category">
-            <h3>LANGUAGES & FRAMEWORKS</h3>
-            <ul>
-              <li>C++ • C • Java • SQL • JavaScript •
-                HTML5 • CSS3 • React.js • Node.js •
-                Java (Spring Boot)</li> 
-            </ul>
-          </div>
-          <div class="skills-category">
-            <h3>DEVELOPMENT TOOLS</h3>
-            <ul>
-              <li>VS Code • Postman • Git • GitHub</li>
-            </ul>
-          </div>
-          <div class="skills-category">
-            <h3>CLOUD PLATFORMS</h3>
-            <ul>
-              <li>SAP Business Technology Platform (BTP)
-                • Firebase • MongoDB Atlas</li>
-            </ul>
-          </div>
-          <div class="skills-category">
-            <h3>DATABASES</h3>
-            <ul>
-              <li>MySQL • MongoDB</li>
-            </ul>
-          </div>
-          <div class="skills-category">
-            <h3>SOFTWARE METHODOLOGIES</h3>
-            <ul>
-              <li>Agile • Scrum</li>
-            </ul>
-          </div>
+      <div class="skills-grid">
+        <div class="skills-category">
+          <h3>LANGUAGES & FRAMEWORKS</h3>
+          <ul>
+            <li>C++</li>
+            <li>C</li>
+            <li>Java</li>
+            <li>SQL</li>
+            <li>JavaScript</li>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>React.js</li>
+            <li>Node.js</li>
+            <li>Java (Spring Boot)</li>
+          </ul>
         </div>
-        <button class="arrow right-arrow" onclick="slideRight()">&#10095;</button>
+        <div class="skills-category">
+          <h3>DEVELOPMENT TOOLS</h3>
+          <ul>
+            <li>VS Code</li>
+            <li>Postman</li>
+            <li>Git</li>
+            <li>GitHub</li>
+          </ul>
+        </div>
+        <div class="skills-category">
+          <h3>CLOUD PLATFORMS</h3>
+          <ul>
+            <li>SAP Business Technology Platform (BTP)</li>
+            <li>Firebase</li>
+            <li>MongoDB Atlas</li>
+          </ul>
+        </div>
+        <div class="skills-category">
+          <h3>DATABASES</h3>
+          <ul>
+            <li>MySQL</li>
+            <li>MongoDB</li>
+          </ul>
+        </div>
+        <div class="skills-category">
+          <h3>SOFTWARE METHODOLOGIES</h3>
+          <ul>
+            <li>Agile</li>
+            <li>Scrum</li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>
@@ -181,22 +190,35 @@
 <section id="education" class="education">
   <div class="container">
     <h2>Education</h2>
-    <div class="timeline">
-      <div class="timeline-item">
-        <div class="timeline-marker"></div>
-        <div class="timeline-content">
-          <div class="item-header">
-            <div class="item-logo">
-              <img src="./Assets/jiit.png" alt="JIIT Logo">
-            </div>
-            <div class="item-details">
-              <h3>Bachelor of Technology</h3>
-              <span class="institute">Jaypee Institute Of Information Technology</span>
-              <p class="date">2019 - 2023</p>
-              <p>Computer Science and Engineering</p>
-              <!-- <p>CGPA: 7</p> -->
-            </div>
+    <div class="education-grid">
+      <!-- <div class="education-card">
+        <div class="education-header">
+          <div class="education-logo">
+            <img src="path-to-university-logo.png" alt="University Logo">
           </div>
+          <div class="education-details">
+            <h3>Master of Science in Computer Science</h3>
+            <div class="institute">University Name</div>
+            <div class="education-date">2018 - 2020</div>
+          </div>
+        </div>
+        <div class="education-content">
+          <p>Specialized in Software Engineering and Data Science. Completed thesis on Machine Learning applications in Natural Language Processing.</p>
+        </div>
+      </div> -->
+      <div class="education-card">
+        <div class="education-header">
+          <div class="education-logo"> 
+            <img src="./Assets/jiit.png" alt="College Logo">
+          </div>
+          <div class="education-details">
+            <h3>Bachelor of Technology in Computer Science</h3>
+            <div class="institute">Jaypee Institute of Information Technology</div>
+            <div class="education-date">2019 - 2023</div>
+          </div>
+        </div>
+        <div class="education-content">
+          <p>Focused on core computer science concepts, software development, and database management. Participated in various technical competitions and hackathons.</p>
         </div>
       </div>
     </div>
@@ -208,30 +230,48 @@
   <div class="container">
     <h2>Projects</h2>
     <div class="projects-grid">
-      <div class="project-item">
+      <div class="project-card">
         <div class="project-image">
           <img src="./Assets/SIH.png" alt="SIH 2022">
+          <div class="project-overlay"></div>
         </div>
         <div class="project-content">
           <h3>TIP 100</h3>
-          <p>Developed a winning solution for SMART INDIA
-            HACKATHON (2022), addressing a problem statement for
-            secure tip-off submissions.</p>
-            <p><a href="https://github.com/GarvitJ09/TIP100" target="_blank">Source Code</a></p>
+          <div class="project-tags">
+            <span class="project-tag">Web Development</span>
+            <span class="project-tag">Security</span>
+            <span class="project-tag">Hackathon</span>
+          </div>
+          <p>Developed a winning solution for SMART INDIA HACKATHON (2022), addressing a problem statement for secure tip-off submissions.</p>
+          <div class="project-links">
+            <a href="https://github.com/GarvitJ09/TIP100" target="_blank" class="project-link">
+              <i class="fab fa-github"></i>
+              Source Code
+            </a>
+          </div>
         </div>
       </div>
-      <div class="project-item">
+      <div class="project-card">
         <div class="project-image">
           <img src="./Assets/RideFusion.jpg" alt="RideFusion">
+          <div class="project-overlay"></div>
         </div>
         <div class="project-content">
           <h3>RIDEFUSION</h3>
-          <p>Designed a unified ride-tracking application enabling users to
-            book and manage rides across multiple service providers.</p>
-            <p><a href="https://github.com/GarvitJ09/OneApp.RideFusion" target="_blank">Source Code</a></p>
+          <div class="project-tags">
+            <span class="project-tag">Mobile App</span>
+            <span class="project-tag">Ride Sharing</span>
+            <span class="project-tag">Integration</span>
+          </div>
+          <p>Designed a unified ride-tracking application enabling users to book and manage rides across multiple service providers.</p>
+          <div class="project-links">
+            <a href="https://github.com/GarvitJ09/OneApp.RideFusion" target="_blank" class="project-link">
+              <i class="fab fa-github"></i>
+              Source Code
+            </a>
+          </div>
         </div>
-      </div> 
-      <!-- Add more project items as needed -->
+      </div>
     </div>
   </div>
 </section>
@@ -239,19 +279,40 @@
 <section id="achievements" class="achievements">
   <div class="container">
     <h2>Achievements</h2>
-    <div class="achievements-list">
-      <div class="achievements-item">
-        <h3>Publication</h3>
-        <h4>Enhancing QMate Regression Testing with Advanced Scoping Tool</h4>
-        <p>Published in the International Journal of Software Engineering, 2023. A detailed analysis of advanced testing methods.</p> 
+    <div class="achievements-grid">
+      <div class="achievement-card">
+        <div class="achievement-icon">
+          <i class="fas fa-trophy"></i>
+        </div>
+        <div class="achievement-content">
+          <h3>Hackathon Winner</h3>
+          <h4>Smart India Hackathon 2022</h4>
+          <p>Developed a winning solution for Smart India Hackathon 2022, addressing a problem statement for secure tip-off submissions.</p>
+          <div class="achievement-date">August 2022</div>
+        </div>
       </div>
-      <div class="achievements-item">
-        <h3>Hackathon</h3>
-        <h4>SMART INDIA HACKATHON 2022</h4>
-        <p>Developed a winning solution for SMART INDIA
-          HACKATHON (2022), addressing a problem statement for
-          secure tip-off submissions.</p> 
+      <div class="achievement-card">
+        <div class="achievement-icon">
+          <i class="fas fa-book"></i>
+        </div>
+        <div class="achievement-content">
+          <h3>Publication</h3>
+          <h4>Enhanced QMate Regressing Testing with Advanced Scoping Tool</h4>
+          <p>Published in International Journal of Computer Engineering, 2024. A detailed analysis od advanced testing methods.</p>
+          <div class="achievement-date">August 2024</div>
+        </div>
       </div>
+      <!-- <div class="achievement-card">
+        <div class="achievement-icon">
+          <i class="fas fa-code"></i>
+        </div>
+        <div class="achievement-content">
+          <h3>Open Source Contributor</h3>
+          <h4>Mozilla Firefox</h4>
+          <p>Contributed to the Mozilla Firefox browser by fixing critical security vulnerabilities and improving performance metrics.</p>
+          <div class="achievement-date">August 2022</div>
+        </div>
+      </div> -->
     </div>
   </div>
 </section>
@@ -276,5 +337,6 @@
   </footer>
 
   <script src="./js/script.js"></script>
+  <script src="./js/main.js"></script>
 </body>
 </html>
