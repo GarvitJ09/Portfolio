@@ -23,6 +23,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Toggle theme
   themeSwitch.addEventListener('change', () => {
+    console.log('theme switched clicked ', themeSwitch.checked);
+    body.classList.toggle('light-theme');
+    body.classList.toggle('dark-theme');
+
     const currentTheme = body.classList.contains('dark-theme')
       ? 'dark-theme'
       : 'light-theme';

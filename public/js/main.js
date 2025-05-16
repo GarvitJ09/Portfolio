@@ -90,7 +90,9 @@ const themeSwitch = document.getElementById('theme-switch');
 const body = document.body;
 
 themeSwitch.addEventListener('change', () => {
+  console.log('theme switched clicked ', themeSwitch.checked);
   if (themeSwitch.checked) {
+    console.log('setting up dark-theme');
     body.classList.remove('light-theme');
     body.classList.add('dark-theme');
     localStorage.setItem('theme', 'dark-theme');
