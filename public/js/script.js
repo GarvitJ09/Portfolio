@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   // Load and apply saved theme
-  const savedTheme = localStorage.getItem('theme') || 'light-theme';
+  const savedTheme = localStorage.getItem('theme') || 'dark-theme';
   body.classList.add(savedTheme);
   if (savedTheme === 'dark-theme') {
     themeSwitch.checked = true;
@@ -23,9 +23,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Toggle theme
   themeSwitch.addEventListener('change', () => {
-    body.classList.toggle('light-theme');
-    body.classList.toggle('dark-theme');
-
     const currentTheme = body.classList.contains('dark-theme')
       ? 'dark-theme'
       : 'light-theme';
@@ -83,21 +80,6 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   }
-
-  // // Slide functionality for skills wrapper
-  // const slideLeft = () => {
-  //   const skillsWrapper = document.querySelector('.skills-wrapper');
-  //   skillsWrapper.scrollBy({ left: -250, behavior: 'smooth' });
-  // };
-
-  // const slideRight = () => {
-  //   const skillsWrapper = document.querySelector('.skills-wrapper');
-  //   skillsWrapper.scrollBy({ left: 250, behavior: 'smooth' });
-  // };
-
-  // // Attach sliding functions to buttons if present
-  // document.querySelector('.slide-left')?.addEventListener('click', slideLeft);
-  // document.querySelector('.slide-right')?.addEventListener('click', slideRight);
 });
 
 // Slide functionality for skills wrapper

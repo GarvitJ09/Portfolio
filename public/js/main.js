@@ -3,11 +3,11 @@ const sections = document.querySelectorAll('section');
 const observerOptions = {
   root: null,
   rootMargin: '0px',
-  threshold: 0.1
+  threshold: 0.1,
 };
 
 const sectionObserver = new IntersectionObserver((entries, observer) => {
-  entries.forEach(entry => {
+  entries.forEach((entry) => {
     if (entry.isIntersecting) {
       entry.target.classList.add('visible');
       // Optionally unobserve after animation
@@ -16,19 +16,19 @@ const sectionObserver = new IntersectionObserver((entries, observer) => {
   });
 }, observerOptions);
 
-sections.forEach(section => {
+sections.forEach((section) => {
   sectionObserver.observe(section);
 });
 
 // Smooth scroll for navigation links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener('click', function (e) {
     e.preventDefault();
     const target = document.querySelector(this.getAttribute('href'));
     if (target) {
       target.scrollIntoView({
         behavior: 'smooth',
-        block: 'start'
+        block: 'start',
       });
     }
   });
@@ -51,9 +51,11 @@ menuClose.addEventListener('click', () => {
 
 // Close menu when clicking outside
 document.addEventListener('click', (e) => {
-  if (menuPanel.classList.contains('active') && 
-      !menuPanel.contains(e.target) && 
-      !menuToggle.contains(e.target)) {
+  if (
+    menuPanel.classList.contains('active') &&
+    !menuPanel.contains(e.target) &&
+    !menuToggle.contains(e.target)
+  ) {
     menuPanel.classList.remove('active');
     document.body.style.overflow = '';
   }
@@ -91,18 +93,18 @@ themeSwitch.addEventListener('change', () => {
   if (themeSwitch.checked) {
     body.classList.remove('light-theme');
     body.classList.add('dark-theme');
-    localStorage.setItem('theme', 'dark');
+    localStorage.setItem('theme', 'dark-theme');
   } else {
     body.classList.remove('dark-theme');
     body.classList.add('light-theme');
-    localStorage.setItem('theme', 'light');
+    localStorage.setItem('theme', 'light-theme');
   }
 });
 
 // Load saved theme preference
 const savedTheme = localStorage.getItem('theme');
 if (savedTheme) {
-  if (savedTheme === 'dark') {
+  if (savedTheme === 'dark-theme') {
     themeSwitch.checked = true;
     body.classList.remove('light-theme');
     body.classList.add('dark-theme');
@@ -111,4 +113,4 @@ if (savedTheme) {
     body.classList.remove('dark-theme');
     body.classList.add('light-theme');
   }
-} 
+}
