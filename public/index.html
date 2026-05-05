@@ -1,367 +1,476 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Garvit Jindal</title>
-  <link rel="icon" href="./Assets/icon.avif" type="image/avif">
+  <title>Garvit Jindal — Software Engineer</title>
+  <meta name="description"
+    content="Software Engineer (SDE-2) at Moody's. Backend systems, data pipelines, cloud-native infrastructure.">
+  <link rel="icon" href="./Assets/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500&display=swap"
+    rel="stylesheet">
+
   <link rel="stylesheet" href="./css/styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
-<body class="light-theme">
-  <div class="menu-icons">
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#achievements">Achievements</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </div>
-  <button class="menu-toggle fixed-button"><i class="fa fa-bars"></i></button>
-  <label class="theme-toggle fixed-button">
-    <input type="checkbox" id="theme-switch">
-    <span class="slider"></span>
-  </label>
 
-  <aside class="menu-panel">
-     <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#achievements">Achievements</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </aside>
- 
-  <section class="hero"> 
-    <div class="hero-content">
-      <h1>I AM GARVIT JINDAL</h1>
-      <p>SOFTWARE ENGINEER</p>
-      <button class="btn"><a href="#about">Explore</a></button>
-      <button class="btn"><a href="https://drive.google.com/file/d/1vRdvNLv1g4fktyPECPFafiEDxEyW7PSv/view" target="_blank">See My Resume</a></button>
-      <aside class="social-panel">
-        <ul>
-          <li><a href="https://www.linkedin.com/in/garvitjindal" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-          <li><a href="https://leetcode.com/u/garvitjindal_" target="_blank">
-            <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2">
-              <path d="M20.2 8.2c-.2-.2-.4-.2-.6 0l-1.2 1.2c-.2.2-.2.4 0 .6 1.2 1.2 1.8 2.8 1.8 4.4s-.6 3.2-1.8 4.4c-2.4 2.4-6.4 2.4-8.8 0-2.4-2.4-2.4-6.4 0-8.8.2-.2.2-.4 0-.6-.2-.2-.4-.2-.6 0-2.8 2.8-2.8 7.2 0 10 1.4 1.4 3.2 2 5 2s3.6-.6 5-2c1.4-1.4 2-3.2 2-5s-.6-3.6-2-5zM12.6 3.4c-.2-.2-.4-.2-.6 0l-7.2 7.2c-.2.2-.2.4 0 .6.2.2.4.2.6 0l7.2-7.2c.2-.2.2-.4 0-.6zM15.4 3.4c-.2-.2-.4-.2-.6 0l-9.6 9.6c-.2.2-.2.4 0 .6.2.2.4.2.6 0l9.6-9.6c.2-.2.2-.4 0-.6z"/>
-            </svg>
-          </a></li>
-          <li><a href="https://www.hackerrank.com/profile/garvit992001" target="_blank"><i class="fab fa-hackerrank"></i></a></li>
-          <li><a href="https://www.youtube.com/@garvitjindal09" target="_blank"><i class="fab fa-youtube"></i></a></li>
-          <li><a href="https://github.com/GarvitJ09/" target="_blank"><i class="fab fa-github"></i></a></li>
-          <li><a href="https://x.com/garvitjindal_" target="_blank"><i class="fab fa-twitter"></i></a></li>
-          <li><a href="https://medium.com/@garvitjindal09" target="_blank"><i class="fab fa-medium"></i></a></li>
-          <!-- Add more social links as needed -->
-        </ul>
-      </aside></div>
-  </section> 
-  
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a href="#top" class="brand">Garvit Jindal</a>
+      <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false"
+        aria-controls="primary-nav-links">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links" id="primary-nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#expertise">Expertise</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#highlights">Highlights</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <section id="about" class="about">
-    <div class="container about-container">
-      <div class="about-image">
-        <img src="./Assets/Garvit_Jindal.jpeg" alt="About Me">
+  <main id="top">
+    <section class="hero">
+      <h1>Garvit Jindal</h1>
+      <p class="hero-role">Software Engineer (SDE-2) at Moody's. Previously SAP Labs.</p>
+      <p class="hero-status">
+        <span class="status-dot"></span>
+        Currently shipping data remediation pipelines at Moody's
+      </p>
+      <div class="prose">
+        <p>I build backend systems and data pipelines — currently working on data remediation infrastructure on AWS
+          (Glue, Lambda, S3) for financial datasets at scale. Before Moody's, I spent ~3 years at SAP Labs building
+          developer tooling and migrating legacy services to cloud-native platforms.</p>
+        <p>Based in Bengaluru, India. <a href="https://drive.google.com/file/d/1vRdvNLv1g4fktyPECPFafiEDxEyW7PSv/view"
+            target="_blank" rel="noopener">Resume&nbsp;↗</a> · <a href="https://www.linkedin.com/in/garvitjindal"
+            target="_blank" rel="noopener">LinkedIn&nbsp;↗</a> · <a href="https://github.com/GarvitJ09/" target="_blank"
+            rel="noopener">GitHub&nbsp;↗</a></p>
       </div>
-      <div class="about-content">
-        <h2>About Me</h2>
-        <p>I am a software engineer, winner of the prestigious Smart India Hackathon 2022. I am passionate about leveraging technology to solve real-world problems. With a solid foundation in computer science, I have honed my skills in software development, data structures, and algorithms.
-          Looking ahead, I am eager to continue growing within the tech industry, tackling complex challenges, and contributing to impactful projects that push the boundaries of innovation.</p>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="skills" class="skills">
-    <div class="container">
-      <h2>Skills</h2>
-      <div class="skills-grid">
-        <div class="skills-category">
-          <h3>LANGUAGES & FRAMEWORKS</h3>
-          <ul>
-            <li>C++</li>
-            <li>C</li>
+    <aside class="stats-section" aria-label="Impact metrics">
+      <div class="stats-grid">
+        <div class="stat">
+          <div class="stat-num"><span class="stat-value" data-target="3">3</span><span class="stat-suffix">+</span>
+          </div>
+          <div class="stat-label">Years engineering</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num"><span class="stat-value" data-target="500">500</span><span class="stat-suffix">+</span>
+          </div>
+          <div class="stat-label">SAP services automated</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num"><span class="stat-value" data-target="10">10</span><span class="stat-suffix">+</span>
+          </div>
+          <div class="stat-label">Apps migrated to cloud</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num"><span class="stat-value">&lt;1</span><span class="stat-suffix">s</span></div>
+          <div class="stat-label">API latency in production</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num"><span class="stat-value" data-target="90">90</span><span class="stat-suffix">%</span>
+          </div>
+          <div class="stat-label">QA test-time reduced</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num"><span class="stat-value" data-target="75">75</span><span class="stat-suffix">%</span>
+          </div>
+          <div class="stat-label">Manual effort cut</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num"><span class="stat-value" data-target="40">40</span><span class="stat-suffix">%</span>
+          </div>
+          <div class="stat-label">Production downtime cut</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num"><span class="stat-value" data-target="2">2</span></div>
+          <div class="stat-label">Industry awards</div>
+        </div>
+      </div>
+    </aside>
+
+    <section id="about" class="section">
+      <h2>About</h2>
+      <div class="about-grid">
+        <img class="about-photo" src="./Assets/Garvit.png" alt="Garvit Jindal">
+        <div class="about-content prose">
+          <p>I'm a software engineer with <strong>3+ years</strong> of experience at SAP Labs and Moody's, building
+            scalable backend systems and cloud-native architectures. I specialize in <strong>Java (Spring
+              Boot)</strong>, <strong>Node.js</strong>, and <strong>Python</strong> — designing microservices that
+            handle millions of records with sub-second latency and high availability.</p>
+          <p>I'm particularly drawn to problems at the intersection of <strong>system design</strong>,
+            <strong>automation</strong>, and <strong>developer productivity</strong> — building systems that make
+            engineering teams faster and more reliable. Recently I've been deepening my AI engineering skills —
+            production LLM orchestration, observability, and low-latency conversational systems.
+          </p>
+          <p>Winner of the <strong>Smart India Hackathon 2022</strong> · B.Tech in Computer Science from JIIT.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="expertise" class="section">
+      <h2>Expertise</h2>
+      <p class="section-intro">Three areas where I do my strongest work — backend systems, AI engineering, and cloud
+        infrastructure.</p>
+
+      <article class="expertise-card">
+        <span class="expertise-num">01</span>
+        <div class="expertise-body">
+          <h3>Backend &amp; Distributed Systems</h3>
+          <p>Java/Spring Boot microservices and Python pipelines handling millions of records with sub-second latency.
+            Strong on API design, async event-driven architectures, and migrating legacy services to cloud-native
+            platforms. At SAP I automated a service classification system across <strong>500+ services</strong> and
+            migrated <strong>10+ legacy applications</strong> to BTP/Cloud Foundry, cutting downtime by
+            <strong>40%</strong>.
+          </p>
+          <ul class="tech-chips">
             <li>Java</li>
-            <li>SQL</li>
-            <li>JavaScript</li>
-            <li>HTML5</li>
-            <li>CSS3</li>
-            <li>React.js</li>
+            <li>Spring Boot</li>
+            <li>Python</li>
             <li>Node.js</li>
-            <li>Java (Spring Boot)</li>
+            <li>REST APIs</li>
+            <li>Microservices</li>
+            <li>Async patterns</li>
           </ul>
         </div>
-        <div class="skills-category">
-          <h3>DEVELOPMENT TOOLS</h3>
-          <ul>
-            <li>VS Code</li>
-            <li>Postman</li>
-            <li>Git</li>
-            <li>GitHub</li>
-          </ul>
-        </div>
-        <div class="skills-category">
-          <h3>CLOUD PLATFORMS</h3>
-          <ul>
-            <li>SAP Business Technology Platform (BTP)</li>
-            <li>Firebase</li>
-            <li>MongoDB Atlas</li>
-          </ul>
-        </div>
-        <div class="skills-category">
-          <h3>DATABASES</h3>
-          <ul>
-            <li>MySQL</li>
+      </article>
+
+      <article class="expertise-card">
+        <span class="expertise-num">02</span>
+        <div class="expertise-body">
+          <h3>AI &amp; LLM Engineering</h3>
+          <p>Production-grade LLM systems with async orchestration, model-agnostic provider switching, and observability
+            built in. Comfortable building <strong>FastAPI + LangChain</strong> services with streaming responses over
+            Server-Sent Events, implementing observability layers that track cost / token usage / Time-To-First-Token
+            across <strong>300+ models</strong>, and designing <strong>multi-tier caching</strong> (Redis hot tier +
+            MongoDB persistence) for low-latency conversational state.</p>
+          <ul class="tech-chips">
+            <li>Python</li>
+            <li>FastAPI</li>
+            <li>LangChain</li>
+            <li>OpenAI</li>
+            <li>Gemini</li>
+            <li>SSE</li>
+            <li>Redis</li>
             <li>MongoDB</li>
+            <li>Prompt chaining</li>
           </ul>
         </div>
-        <div class="skills-category">
-          <h3>SOFTWARE METHODOLOGIES</h3>
-          <ul>
-            <li>Agile</li>
-            <li>Scrum</li>
+      </article>
+
+      <article class="expertise-card">
+        <span class="expertise-num">03</span>
+        <div class="expertise-body">
+          <h3>Cloud &amp; Data Infrastructure</h3>
+          <p>ETL pipelines and cloud-native services on AWS and SAP BTP. Currently designing AWS Glue jobs with Python
+            Lambda for event-driven data remediation at Moody's, surfaced through React + Retool dashboards for the
+            data ops team. Comfortable operating data systems at scale and integrating with downstream consumers.</p>
+          <ul class="tech-chips">
+            <li>AWS Glue</li>
+            <li>Lambda</li>
+            <li>S3</li>
+            <li>SAP BTP</li>
+            <li>Cloud Foundry</li>
+            <li>MongoDB</li>
+            <li>MySQL</li>
+            <li>Retool</li>
+            <li>Docker</li>
           </ul>
         </div>
-      </div>
-    </div>
-  </section>
+      </article>
+    </section>
 
-  <section id="experience" class="experience theme-section"> 
-    <div class="container">
-      <h2>Experience</h2>
-      <div class="timeline">
-        <div class="timeline-item">
-          <div class="timeline-marker"></div>
-          <div class="timeline-content">
-            <div class="item-header">
-              <div class="item-logo">
-                <img src="./Assets/SAP.png" alt="SAP Logo">
-              </div>
-              <div class="item-details">
-            <h3>Software Engineer</h3>
-            <span class="company">SAP Labs</span>
-            <p class="date">July, 2023 - Present</p>
-            <!-- <p>Contributed to front-end development and UI/UX design improvements.</p> -->
-          </div> 
-          </div>
-        </div>
-      </div>
-        <div class="timeline-item">
-          <div class="timeline-marker"></div>
-          <div class="timeline-content">
-            <div class="item-header">
-              <div class="item-logo">
-                <img src="./Assets/SAP.png" alt="SAP Logo">
-              </div>
-              <div class="item-details">
-            <h3>Software Engineer Intern</h3>
-            <span class="company">SAP Labs</span>
-            <p class="date">Feb, 2023 - July, 2023</p>
-            <!-- <p>Assisted in the development of internal tools and automation scripts.</p> -->
-           </div>
-        </div>
-        </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-marker"></div>
-          <div class="timeline-content">
-            <div class="item-header">
-              <div class="item-logo">
-                <img src="./Assets/AxactStudios.png" alt="AxactStudios Logo">
-              </div>
-              <div class="item-details">
-            <h3>Web Development Intern</h3>
-            <span class="company">Axact Studios</span>
-            <p class="date">June, 2022 - July, 2022</p>
-            <!-- <p>Contributed to front-end development and UI/UX design improvements.</p> -->
-          </div> 
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-  </section> 
+    <section id="work" class="section">
+      <h2>Work</h2>
 
-<section id="education" class="education">
-  <div class="container">
-    <h2>Education</h2>
-    <div class="education-grid">
-      <!-- <div class="education-card">
-        <div class="education-header">
-          <div class="education-logo">
-            <img src="path-to-university-logo.png" alt="University Logo">
-          </div>
-          <div class="education-details">
-            <h3>Master of Science in Computer Science</h3>
-            <div class="institute">University Name</div>
-            <div class="education-date">2018 - 2020</div>
-          </div>
-        </div>
-        <div class="education-content">
-          <p>Specialized in Software Engineering and Data Science. Completed thesis on Machine Learning applications in Natural Language Processing.</p>
-        </div>
-      </div> -->
-      <div class="education-card">
-        <div class="education-header">
-          <div class="education-logo"> 
-            <img src="./Assets/jiit.png" alt="College Logo">
-          </div>
-          <div class="education-details">
-            <h3>Bachelor of Technology in Computer Science</h3>
-            <div class="institute">Jaypee Institute of Information Technology</div>
-            <div class="education-date">2019 - 2023</div>
-          </div>
-        </div>
-        <div class="education-content">
-          <p>Focused on core computer science concepts, software development, and database management. Participated in various technical competitions and hackathons.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-  
+      <article class="entry">
+        <header class="entry-header">
+          <div class="entry-logo"><img src="./Assets/Moody's.jpeg" alt="Moody's Corporation"></div>
+          <h3>Moody's Corporation</h3>
+          <p class="entry-role">Software Engineer (SDE-2)</p>
+          <span class="entry-date">Dec 2025 – Present</span>
+        </header>
+        <ul class="entry-list">
+          <li>Building a data remediation pipeline that identifies, flags, and corrects data quality issues across
+            large-scale financial datasets.</li>
+          <li>Designing AWS Glue ETL jobs for structured and semi-structured data, with Python Lambda functions handling
+            event-driven transformation and automated remediation.</li>
+          <li>Building a React + Retool internal dashboard for data ops teams to monitor remediation status and trigger
+            manual overrides.</li>
+        </ul>
+        <ul class="tech-chips tech-chips--indent">
+          <li>Python</li>
+          <li>AWS Glue</li>
+          <li>Lambda</li>
+          <li>S3</li>
+          <li>React</li>
+          <li>Retool</li>
+        </ul>
+      </article>
 
-<section id="projects" class="projects">
-  <div class="container">
-    <h2>Projects</h2>
-    <div class="projects-grid">
-      <div class="project-card">
-        <div class="project-image">
-          <img src="./Assets/SIH.png" alt="SIH 2022">
-          <div class="project-overlay"></div>
-        </div>
-        <div class="project-content">
-          <h3>TIP 100</h3>
-          <div class="project-tags">
-            <span class="project-tag">Web Development</span>
-            <span class="project-tag">Security</span>
-            <span class="project-tag">Hackathon</span>
-          </div>
-          <p>Developed a winning solution for SMART INDIA HACKATHON (2022), addressing a problem statement for secure tip-off submissions.</p>
-          <div class="project-links">
-            <a href="https://github.com/GarvitJ09/TIP100" target="_blank" class="project-link">
-              <i class="fab fa-github"></i>
-              Source Code
+      <article class="entry">
+        <header class="entry-header">
+          <div class="entry-logo"><img src="./Assets/SAP.png" alt="SAP"></div>
+          <h3>SAP Labs</h3>
+          <p class="entry-role">Developer Associate (SDE-I)</p>
+          <span class="entry-date">Jul 2023 – Dec 2025</span>
+        </header>
+        <ul class="entry-list">
+          <li>Built a regression scoping tool that cut QA testing time by <strong>90%</strong> and manual effort by
+            <strong>75%</strong>, adopted across enterprise testing workflows at SAP.
+          </li>
+          <li>Automated a service classification system in Java/Spring Boot, improving infrastructure efficiency across
+            <strong>50+ SAP services</strong>.
+          </li>
+          <li>Migrated <strong>10+ legacy applications</strong> to SAP BTP / Cloud Foundry, reducing production downtime
+            by <strong>40%</strong>.</li>
+          <li>Designed backend APIs connecting cloud-based SAP tools with internal systems to improve cross-service
+            automation and developer productivity.</li>
+        </ul>
+        <ul class="tech-chips tech-chips--indent">
+          <li>Java</li>
+          <li>Spring Boot</li>
+          <li>SAP BTP</li>
+          <li>Cloud Foundry</li>
+          <li>HANA</li>
+        </ul>
+      </article>
+
+      <article class="entry">
+        <header class="entry-header">
+          <div class="entry-logo"><img src="./Assets/SAP.png" alt="SAP"></div>
+          <h3>SAP Labs</h3>
+          <p class="entry-role">Software Engineer Intern</p>
+          <span class="entry-date">Feb 2023 – Jul 2023</span>
+        </header>
+        <ul class="entry-list">
+          <li>Onboarded onto the SAP BTP and HANA cloud stack; contributed to early-stage backend service development
+            and internal tooling.</li>
+        </ul>
+        <ul class="tech-chips tech-chips--indent">
+          <li>Java</li>
+          <li>SAP BTP</li>
+          <li>HANA</li>
+        </ul>
+      </article>
+
+      <article class="entry">
+        <header class="entry-header">
+          <div class="entry-logo"><img src="./Assets/AxactStudios.png" alt="Axact Studios"></div>
+          <h3>Axact Studios</h3>
+          <p class="entry-role">Web Development Intern</p>
+          <span class="entry-date">Jun 2022 – Jul 2022</span>
+        </header>
+        <ul class="entry-list">
+          <li>Contributed to front-end development and UI/UX improvements for client-facing web projects.</li>
+        </ul>
+        <ul class="tech-chips tech-chips--indent">
+          <li>MongoDB</li>
+          <li>ExpressJs</li>
+          <li>ReactJS</li>
+          <li>NodeJs</li>
+          <li>SQL</li>
+          <li>Firebase</li>
+        </ul>
+      </article>
+    </section>
+
+    <section id="projects" class="section">
+      <h2>Selected Projects</h2>
+
+      <article class="project">
+        <h3>TIP 100</h3>
+        <p class="project-tagline">Smart India Hackathon 2022 — winning entry.</p>
+        <p>Secure tip-off submission system designed for anonymous, encrypted reporting of sensitive intelligence
+          inputs. Selected as the national winner among thousands of teams.</p>
+        <ul class="tech-chips">
+          <li>Web</li>
+          <li>Security</li>
+          <li>Hackathon</li>
+        </ul>
+        <p class="project-links"><a href="https://github.com/GarvitJ09/TIP100" target="_blank"
+            rel="noopener">Source&nbsp;↗</a></p>
+      </article>
+
+      <article class="project">
+        <h3>RideFusion</h3>
+        <p class="project-tagline">Unified ride-tracking across providers.</p>
+        <p>Aggregator app that lets users book and track rides across multiple ride-sharing services from a single
+          interface, comparing fares and ETAs in real time.</p>
+        <ul class="tech-chips">
+          <li>Mobile</li>
+          <li>APIs</li>
+          <li>Integration</li>
+        </ul>
+        <p class="project-links"><a href="https://github.com/GarvitJ09/OneApp.RideFusion" target="_blank"
+            rel="noopener">Source&nbsp;↗</a></p>
+      </article>
+
+      <article class="project">
+        <h3>Gaming Store</h3>
+        <p class="project-tagline">Full-stack e-commerce platform.</p>
+        <p>Customer storefront, admin dashboard, and rider PWA built for a gaming retail company. Product variants,
+          Google Sign-In, and role-based order management across three connected apps.</p>
+        <ul class="tech-chips">
+          <li>Full-stack</li>
+          <li>E-commerce</li>
+          <li>PWA</li>
+        </ul>
+        <p class="project-links">
+          <a href="https://github.com/GarvitJ09/Gaming-Store" target="_blank" rel="noopener">Source&nbsp;↗</a>
+          ·
+          <a href="https://gamingstore-demo.vercel.app" target="_blank" rel="noopener">Live demo&nbsp;↗</a>
+        </p>
+      </article>
+    </section>
+
+    <section id="highlights" class="section">
+      <h2>Highlights</h2>
+      <p class="section-intro">Articles, recognition, and recent code activity.</p>
+
+      <div class="highlights-block">
+        <h3>Articles</h3>
+        <ul class="recognition-list">
+          <li>
+            <a href="https://medium.com/@garvitjindal09/flipkart-sde-2-interview-experience-12d733dc0ac7"
+              target="_blank" rel="noopener" class="recognition-link">
+              <span class="recognition-title">Flipkart SDE-2 Interview Experience</span>
             </a>
-          </div>
-        </div>
-      </div>
-      <div class="project-card">
-        <div class="project-image">
-          <img src="./Assets/RideFusion.jpg" alt="RideFusion">
-          <div class="project-overlay"></div>
-        </div>
-        <div class="project-content">
-          <h3>RIDEFUSION</h3>
-          <div class="project-tags">
-            <span class="project-tag">Mobile App</span>
-            <span class="project-tag">Ride Sharing</span>
-            <span class="project-tag">Integration</span>
-          </div>
-          <p>Designed a unified ride-tracking application enabling users to book and manage rides across multiple service providers.</p>
-          <div class="project-links">
-            <a href="https://github.com/GarvitJ09/OneApp.RideFusion" target="_blank" class="project-link">
-              <i class="fab fa-github"></i>
-              Source Code
+            <span class="recognition-meta">Medium&nbsp;↗</span>
+          </li>
+          <li>
+            <a href="https://medium.com/@garvitjindal09/cracking-the-sap-on-campus-interview-my-experience-d4432ae44a1e"
+              target="_blank" rel="noopener" class="recognition-link">
+              <span class="recognition-title">Cracking the SAP On-Campus Interview — My Experience</span>
             </a>
-          </div>
+            <span class="recognition-meta">Medium&nbsp;↗</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="highlights-block">
+        <h3>Recognition</h3>
+        <ul class="recognition-list">
+          <li>
+            <span class="recognition-title">Smart India Hackathon — Winner</span>
+            <span class="recognition-meta">Aug 2022</span>
+          </li>
+          <li>
+            <span class="recognition-title">Rising Star Award</span>
+            <span class="recognition-meta">SAP Labs</span>
+          </li>
+          <li>
+            <span class="recognition-title">Enhancing QMate Regression Testing with Advanced Scoping Tool</span>
+            <span class="recognition-meta">Publication, 2024</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="highlights-block">
+        <h3>GitHub Activity</h3>
+        <p class="prose">Public commits over the last year. Full profile on
+          <a href="https://github.com/GarvitJ09" target="_blank" rel="noopener">GitHub&nbsp;↗</a>.
+        </p>
+        <div class="github-graph">
+          <img
+            src="https://github-readme-activity-graph.vercel.app/graph?username=GarvitJ09&bg_color=26241f&color=f5f1e8&line=d97757&point=e8b06f&area=true&hide_border=true&radius=8"
+            alt="Garvit Jindal's GitHub commit activity graph" loading="lazy">
         </div>
       </div>
-      <div class="project-card">
-  <div class="project-image">
-    <img src="./Assets/gaming-store.png" alt="Gaming Store Project" style="height: 200px; width: 100%; object-fit: cover;">
-    <div class="project-overlay"></div>
-  </div>
-  <div class="project-content">
-    <h3>Gaming Store</h3>
-    <div class="project-tags">
-      <span class="project-tag">Full-Stack</span>
-      <span class="project-tag">E-commerce</span>
-      <span class="project-tag">Gaming</span>
-    </div>
-    <p>Built a full-stack e-commerce platform for a gaming company with customer-facing UI, admin dashboard, and rider PWA. Includes product variants, Google Sign-In, and role-based order management.</p>
-    <div class="project-links">
-      <a href="https://github.com/GarvitJ09/Gaming-Store" target="_blank" class="project-link">
-        <i class="fab fa-github"></i>
-        Source Code
-      </a>
-      <a href="https://gamingstore-demo.vercel.app" target="_blank" class="project-link">
-        <i class="fas fa-external-link-alt"></i>
-        Live Demo
-      </a>
-    </div>
-  </div>
-</div>
+    </section>
 
-    </div>
-  </div>
-</section>
+    <section id="education" class="section">
+      <h2>Education</h2>
+      <article class="entry">
+        <header class="entry-header">
+          <div class="entry-logo"><img src="./Assets/jiit.png" alt="JIIT"></div>
+          <h3>Jaypee Institute of Information Technology</h3>
+          <p class="entry-role">B.Tech, Computer Science</p>
+          <span class="entry-date">2019 – 2023</span>
+        </header>
+        <p class="prose">Focus on software development, data structures, and database systems. Active in technical
+          competitions and hackathons.</p>
+      </article>
+    </section>
 
-<section id="achievements" class="achievements">
-  <div class="container">
-    <h2>Achievements</h2>
-    <div class="achievements-grid">
-      <div class="achievement-card">
-        <div class="achievement-icon">
-          <i class="fas fa-trophy"></i>
-        </div>
-        <div class="achievement-content">
-          <h3>Hackathon Winner</h3>
-          <h4>Smart India Hackathon 2022</h4>
-          <p>Developed a winning solution for Smart India Hackathon 2022, addressing a problem statement for secure tip-off submissions.</p>
-          <div class="achievement-date">August 2022</div>
-        </div>
-      </div>
-      <div class="achievement-card">
-        <div class="achievement-icon">
-          <i class="fas fa-book"></i>
-        </div>
-        <div class="achievement-content">
-          <h3>Publication</h3>
-          <h4>Enhanced QMate Regressing Testing with Advanced Scoping Tool</h4>
-          <p>Published in International Journal of Computer Engineering, 2024. A detailed analysis od advanced testing methods.</p>
-          <div class="achievement-date">August 2024</div>
-        </div>
-      </div>
-      <!-- <div class="achievement-card">
-        <div class="achievement-icon">
-          <i class="fas fa-code"></i>
-        </div>
-        <div class="achievement-content">
-          <h3>Open Source Contributor</h3>
-          <h4>Mozilla Firefox</h4>
-          <p>Contributed to the Mozilla Firefox browser by fixing critical security vulnerabilities and improving performance metrics.</p>
-          <div class="achievement-date">August 2022</div>
-        </div>
-      </div> -->
-    </div>
-  </div>
-</section>
+    <section id="contact" class="section">
+      <h2>Get in touch</h2>
+      <p class="prose">
+        The fastest way to reach me is at <a href="mailto:garvit992001@gmail.com">garvit992001@gmail.com</a>, or send a
+        message below.
+      </p>
 
-
-
-  <section id="contact" class="contact">
-    <div class="container">
-      <h2>Contact Me</h2>
-      <form class="contact-form">
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Your Email" required>
-        <input type="tel" placeholder="Your Phone Number" pattern="[0-9]{10}" title="Please enter a valid 10-digit phone number" required>
-        <textarea placeholder="Your Message" required></textarea>
-        <button type="submit" class="btn">Send</button>
+      <form class="contact-form" id="contact-form" novalidate>
+        <div class="form-row">
+          <label class="field">
+            <span>Name</span>
+            <input type="text" name="name" required>
+          </label>
+          <label class="field">
+            <span>Email</span>
+            <input type="email" name="email" required>
+          </label>
+        </div>
+        <label class="field">
+          <span>Phone <em>(optional)</em></span>
+          <input type="tel" name="phone" pattern="[0-9]{10}" title="10-digit phone number">
+        </label>
+        <label class="field">
+          <span>Message</span>
+          <textarea name="message" rows="5" required></textarea>
+        </label>
+        <div class="form-footer">
+          <button type="submit" class="form-submit">Send message</button>
+          <span class="form-status" id="form-status" aria-live="polite"></span>
+        </div>
       </form>
-    </div>
-  </section>
+
+      <p class="prose social-row">
+        <a href="https://www.linkedin.com/in/garvitjindal" target="_blank" rel="noopener">LinkedIn&nbsp;↗</a>
+        ·
+        <a href="https://github.com/GarvitJ09/" target="_blank" rel="noopener">GitHub&nbsp;↗</a>
+        ·
+        <a href="https://leetcode.com/u/garvitjindal_" target="_blank" rel="noopener">LeetCode&nbsp;↗</a>
+        ·
+        <a href="https://www.hackerrank.com/profile/garvit992001" target="_blank" rel="noopener">HackerRank&nbsp;↗</a>
+        ·
+        <a href="https://x.com/garvitjindal_" target="_blank" rel="noopener">Twitter&nbsp;↗</a>
+        ·
+        <a href="https://medium.com/@garvitjindal09" target="_blank" rel="noopener">Medium&nbsp;↗</a>
+        ·
+        <a href="https://www.youtube.com/@garvitjindal09" target="_blank" rel="noopener">YouTube&nbsp;↗</a>
+      </p>
+    </section>
+  </main>
+
+  <nav class="section-dots" aria-label="Section progress">
+    <a href="#about" data-section="about" aria-label="About"><span></span></a>
+    <a href="#expertise" data-section="expertise" aria-label="Expertise"><span></span></a>
+    <a href="#work" data-section="work" aria-label="Work"><span></span></a>
+    <a href="#projects" data-section="projects" aria-label="Projects"><span></span></a>
+    <a href="#highlights" data-section="highlights" aria-label="Highlights"><span></span></a>
+    <a href="#education" data-section="education" aria-label="Education"><span></span></a>
+    <a href="#contact" data-section="contact" aria-label="Contact"><span></span></a>
+  </nav>
 
   <footer class="footer">
-    <p>&copy; 2025 Developed by Garvit Jindal</p>
+    <p>© 2026 Garvit Jindal</p>
   </footer>
 
-  <script src="./js/script.js"></script>
   <script src="./js/main.js"></script>
 </body>
+
 </html>
