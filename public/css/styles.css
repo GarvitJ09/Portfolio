@@ -598,19 +598,20 @@ main a:hover {
   margin-bottom: 16px;
 }
 
-/* GitHub activity graph — dark-native, integrates with the page */
+/* GitHub contribution heatmap — light "data panel" insert against dark page */
 .github-graph {
-  background: var(--surface);
-  border: 1px solid var(--border);
+  background: #f0eee4;
+  border: 1px solid var(--border-strong);
   border-radius: 10px;
-  padding: 0;
-  overflow: hidden;
+  padding: 22px 24px;
+  overflow-x: auto;
 }
 
 .github-graph img {
   display: block;
   width: 100%;
   height: auto;
+  min-width: 680px;
 }
 
 .project-links {
